@@ -1,0 +1,93 @@
+{
+    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+      {
+        "tool": {
+          "driver": {
+            "name": "Clair V4",
+            "informationUri": "https://github.com/quay/clair",
+            "fullName": "Clair V4 Vulnerability Scanner",
+            "version": "v0.0.1",
+          }
+        },
+        "results": [
+          {
+            "ruleId": "4888901",
+            "ruleIndex": 4888901,
+            "level": "error",
+            "message": {
+              "text": {0} - {1} - {2} &#34;Pip version 21.1 includes a fix for CVE-2021-3572: A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity.\r\nhttps://bugzilla.redhat.com/show_bug.cgi?id=1962856.&#34;,
+              "arguments": [
+                  pip,
+                  &lt;21.1,
+                  Unknown,
+              ]
+            },
+            "locations": [{
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endColumn": 1
+                }
+              }
+            }]
+          },
+          {
+            "ruleId": "4888902",
+            "ruleIndex": 4888902,
+            "level": "error",
+            "message": {
+              "text": {0} - {1} - {2} &#34;Pip 21.1 updates its dependency &#39;urllib3&#39; to v1.26.4 due to security issues.&#34;,
+              "arguments": [
+                  pip,
+                  &lt;21.1,
+                  Unknown,
+              ]
+            },
+            "locations": [{
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endColumn": 1
+                }
+              }
+            }]
+          },
+          {
+            "ruleId": "4893780",
+            "ruleIndex": 4893780,
+            "level": "error",
+            "message": {
+              "text": {0} - {1} - {2} &#34;All versions of the package reportlab are vulnerable to Server-side Request Forgery (SSRF) via img tags. In order to reduce risk, use trustedSchemes &amp; trustedHosts (see in Reportlab&#39;s documentation).\r\nhttps://www.reportlab.com/docs/reportlab-userguide.pdf.&#34;,
+              "arguments": [
+                  reportlab,
+                  &gt;=0,
+                  Unknown,
+              ]
+            },
+            "locations": [{
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endColumn": 1
+                }
+              }
+            }]
+          }],
+        "columnKind": "utf16CodeUnits"
+      }
+    ]
+  }
