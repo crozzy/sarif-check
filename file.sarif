@@ -1,78 +1,1658 @@
 {
-    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
-    "version": "2.1.0",
-    "runs": [
-      {
-        "tool": {
-          "driver": {
-            "name": "Clair V4",
-            "informationUri": "https://github.com/quay/clair",
-            "fullName": "Clair V4 Vulnerability Scanner",
-            "version": "v0.0.1"
-          }
-        },
-        "results": [
-          {
-            "ruleId": "4888901",
-            "ruleIndex": 4888901,
-            "level": "error",
-            "message": {
-              "text": "[pip - &lt;21.1 - Unknown] &#34;Pip version 21.1 includes a fix for CVE-2021-3572: A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity.\r\nhttps://bugzilla.redhat.com/show_bug.cgi?id=1962856.&#34;,"
-            },
-            "locations": [{
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile"
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Clair V4",
+          "informationUri": "https://github.com/quay/clair",
+          "fullName": "Clair V4 Vulnerability Scanner",
+          "version": "v0.0.1",
+          "rules": [
+                  {
+                  "id": "1292724-06dbbc41-7949-42cf-b342-26561a35a6e8",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "libxml2 - 2.9.7-9.el8_4.2 - RHSA-2022:0899: libxml2 security update (Moderate)"
+                  },
+                  "fullDescription": {
+                    "text": "The libxml2 library is a development toolbox providing the implementation of various XML standards.\u000A\u000ASecurity Fix(es):\u000A\u000A* libxml2: Use-after-free of ID and IDREF attributes (CVE-2022-23308)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "The libxml2 library is a development toolbox providing the implementation of various XML standards.\u000A\u000ASecurity Fix(es):\u000A\u000A* libxml2: Use-after-free of ID and IDREF attributes (CVE-2022-23308)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 0:2.9.7-12.el8_5"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/o:redhat:enterprise_linux:8::baseos",
+                      "libxml2",
+                      "2.9.7-9.el8_4.2"
+                    ],
+                    "precision": "very-high"
+                  }
                 },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endColumn": 1
-                }
-              }
-            }]
-          },
-          {
-            "ruleId": "4888902",
-            "ruleIndex": 4888902,
-            "level": "error",
-            "message": {
-              "text": "[pip - &lt;21.1 - Unknown] &#34;Pip 21.1 updates its dependency &#39;urllib3&#39; to v1.26.4 due to security issues.&#34;,"
-            },
-            "locations": [{
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile"
+                  {
+                  "id": "1292714-06dbbc41-7949-42cf-b342-26561a35a6e8",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "libxml2 - 2.9.7-9.el8_4.2 - RHSA-2022:0899: libxml2 security update (Moderate)"
+                  },
+                  "fullDescription": {
+                    "text": "The libxml2 library is a development toolbox providing the implementation of various XML standards.\u000A\u000ASecurity Fix(es):\u000A\u000A* libxml2: Use-after-free of ID and IDREF attributes (CVE-2022-23308)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "The libxml2 library is a development toolbox providing the implementation of various XML standards.\u000A\u000ASecurity Fix(es):\u000A\u000A* libxml2: Use-after-free of ID and IDREF attributes (CVE-2022-23308)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 0:2.9.7-12.el8_5"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/a:redhat:enterprise_linux:8::appstream",
+                      "libxml2",
+                      "2.9.7-9.el8_4.2"
+                    ],
+                    "precision": "very-high"
+                  }
                 },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endColumn": 1
-                }
-              }
-            }]
-          },
-          {
-            "ruleId": "4893780",
-            "ruleIndex": 4893780,
-            "level": "error",
-            "message": {
-              "text": "[pip - &lt;21.1 - Unknown] &#34;All versions of the package reportlab are vulnerable to Server-side Request Forgery (SSRF) via img tags. In order to reduce risk, use trustedSchemes &amp; trustedHosts (see in Reportlab&#39;s documentation).\r\nhttps://www.reportlab.com/docs/reportlab-userguide.pdf.&#34;,"
-            },
-            "locations": [{
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile"
+                  {
+                  "id": "4388425-0d69b52b-6fd8-43e4-975b-912895c456a1",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "pillow - 8.3.2 - pyup.io-44525 (PVE-2021-44525)"
+                  },
+                  "fullDescription": {
+                    "text": "Pillow 9.0.0 excludes carriage return in PDF regex to help prevent ReDoS.\u000D\u000Ahttps://github.com/python-pillow/Pillow/pull/5912\u000D\u000Ahttps://github.com/python-pillow/Pillow/commit/43b800d933c996226e4d7df00c33fcbe46d97363"
+                  },
+                  "help": {
+                    "text": "Pillow 9.0.0 excludes carriage return in PDF regex to help prevent ReDoS.\u000D\u000Ahttps://github.com/python-pillow/Pillow/pull/5912\u000D\u000Ahttps://github.com/python-pillow/Pillow/commit/43b800d933c996226e4d7df00c33fcbe46d97363\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "pillow",
+                      "8.3.2"
+                    ],
+                    "precision": "very-high"
+                  }
                 },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endColumn": 1
+                  {
+                  "id": "4388426-0d69b52b-6fd8-43e4-975b-912895c456a1",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "pillow - 8.3.2 - pyup.io-44485 (CVE-2022-22815)"
+                  },
+                  "fullDescription": {
+                    "text": "Pillow 9.0.0 includes a fix for CVE-2022-22815: path_getbbox in path.c in Pillow before 9.0.0 improperly initializes ImagePath.Path.\u000D\u000Ahttps://pillow.readthedocs.io/en/stable/releasenotes/9.0.0.html#fixed-imagepath-path-array-handling"
+                  },
+                  "help": {
+                    "text": "Pillow 9.0.0 includes a fix for CVE-2022-22815: path_getbbox in path.c in Pillow before 9.0.0 improperly initializes ImagePath.Path.\u000D\u000Ahttps://pillow.readthedocs.io/en/stable/releasenotes/9.0.0.html#fixed-imagepath-path-array-handling\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "pillow",
+                      "8.3.2"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4388427-0d69b52b-6fd8-43e4-975b-912895c456a1",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "pillow - 8.3.2 - pyup.io-44524 (PVE-2022-44524)"
+                  },
+                  "fullDescription": {
+                    "text": "Pillow 9.0.0 ensures JpegImagePlugin stops at the end of a truncated file to avoid Denial of Service attacks.\u000D\u000Ahttps://github.com/python-pillow/Pillow/pull/5921"
+                  },
+                  "help": {
+                    "text": "Pillow 9.0.0 ensures JpegImagePlugin stops at the end of a truncated file to avoid Denial of Service attacks.\u000D\u000Ahttps://github.com/python-pillow/Pillow/pull/5921\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "pillow",
+                      "8.3.2"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4388428-0d69b52b-6fd8-43e4-975b-912895c456a1",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "pillow - 8.3.2 - pyup.io-44486 (CVE-2022-22816)"
+                  },
+                  "fullDescription": {
+                    "text": "Pillow 9.0.0 includes a fix for CVE-2022-22816: path_getbbox in path.c in Pillow before 9.0.0 has a buffer over-read during initialization of ImagePath.Path.\u000D\u000Ahttps://pillow.readthedocs.io/en/stable/releasenotes/9.0.0.html#fixed-imagepath-path-array-handling"
+                  },
+                  "help": {
+                    "text": "Pillow 9.0.0 includes a fix for CVE-2022-22816: path_getbbox in path.c in Pillow before 9.0.0 has a buffer over-read during initialization of ImagePath.Path.\u000D\u000Ahttps://pillow.readthedocs.io/en/stable/releasenotes/9.0.0.html#fixed-imagepath-path-array-handling\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "pillow",
+                      "8.3.2"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4388429-0d69b52b-6fd8-43e4-975b-912895c456a1",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "pillow - 8.3.2 - pyup.io-44487 (CVE-2022-22817)"
+                  },
+                  "fullDescription": {
+                    "text": "PIL.ImageMath.eval in Pillow before 9.0.0 allows evaluation of arbitrary expressions, such as ones that use the Python exec method. A lambda expression could also be used,"
+                  },
+                  "help": {
+                    "text": "PIL.ImageMath.eval in Pillow before 9.0.0 allows evaluation of arbitrary expressions, such as ones that use the Python exec method. A lambda expression could also be used,\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "pillow",
+                      "8.3.2"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4388430-0d69b52b-6fd8-43e4-975b-912895c456a1",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "pillow - 8.3.2 - pyup.io-45356 (CVE-2022-24303)"
+                  },
+                  "fullDescription": {
+                    "text": "Pillow before 9.0.1 allows attackers to delete files because spaces in temporary pathnames are mishandled."
+                  },
+                  "help": {
+                    "text": "Pillow before 9.0.1 allows attackers to delete files because spaces in temporary pathnames are mishandled.\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "pillow",
+                      "8.3.2"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4387255-11f1f426-d578-467e-bcce-e0bffd990c7d",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "click - 7.1.2 - pyup.io-47833 (PVE-2022-47833)"
+                  },
+                  "fullDescription": {
+                    "text": "Click 8.0.0 uses \u0026#39;mkstemp()\u0026#39; instead of the deprecated \u0026amp; insecure \u0026#39;mktemp()\u0026#39;.\u000D\u000Ahttps://github.com/pallets/click/issues/1752"
+                  },
+                  "help": {
+                    "text": "Click 8.0.0 uses \u0026#39;mkstemp()\u0026#39; instead of the deprecated \u0026amp; insecure \u0026#39;mktemp()\u0026#39;.\u000D\u000Ahttps://github.com/pallets/click/issues/1752\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "click",
+                      "7.1.2"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1290096-15351dd1-fa96-4494-90ea-7f3dd9fdf08d",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "libarchive - 3.3.3-1.el8 - RHSA-2022:0892: libarchive security update (Moderate)"
+                  },
+                  "fullDescription": {
+                    "text": "The libarchive programming library can create and read several different streaming archive formats, including GNU tar, cpio, and ISO 9660 CD-ROM images. Libarchive is used notably in the bsdtar utility, scripting language bindings such as python-libarchive, and several popular desktop file managers.\u000A\u000ASecurity Fix(es):\u000A\u000A* libarchive: extracting a symlink with ACLs modifies ACLs of target (CVE-2021-23177)\u000A\u000A* libarchive: symbolic links incorrectly followed when changing modes, times, ACL and flags of a file while extracting an archive (CVE-2021-31566)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "The libarchive programming library can create and read several different streaming archive formats, including GNU tar, cpio, and ISO 9660 CD-ROM images. Libarchive is used notably in the bsdtar utility, scripting language bindings such as python-libarchive, and several popular desktop file managers.\u000A\u000ASecurity Fix(es):\u000A\u000A* libarchive: extracting a symlink with ACLs modifies ACLs of target (CVE-2021-23177)\u000A\u000A* libarchive: symbolic links incorrectly followed when changing modes, times, ACL and flags of a file while extracting an archive (CVE-2021-31566)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 0:3.3.3-3.el8_5"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/o:redhat:enterprise_linux:8::baseos",
+                      "libarchive",
+                      "3.3.3-1.el8"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1290086-15351dd1-fa96-4494-90ea-7f3dd9fdf08d",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "libarchive - 3.3.3-1.el8 - RHSA-2022:0892: libarchive security update (Moderate)"
+                  },
+                  "fullDescription": {
+                    "text": "The libarchive programming library can create and read several different streaming archive formats, including GNU tar, cpio, and ISO 9660 CD-ROM images. Libarchive is used notably in the bsdtar utility, scripting language bindings such as python-libarchive, and several popular desktop file managers.\u000A\u000ASecurity Fix(es):\u000A\u000A* libarchive: extracting a symlink with ACLs modifies ACLs of target (CVE-2021-23177)\u000A\u000A* libarchive: symbolic links incorrectly followed when changing modes, times, ACL and flags of a file while extracting an archive (CVE-2021-31566)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "The libarchive programming library can create and read several different streaming archive formats, including GNU tar, cpio, and ISO 9660 CD-ROM images. Libarchive is used notably in the bsdtar utility, scripting language bindings such as python-libarchive, and several popular desktop file managers.\u000A\u000ASecurity Fix(es):\u000A\u000A* libarchive: extracting a symlink with ACLs modifies ACLs of target (CVE-2021-23177)\u000A\u000A* libarchive: symbolic links incorrectly followed when changing modes, times, ACL and flags of a file while extracting an archive (CVE-2021-31566)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 0:3.3.3-3.el8_5"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/a:redhat:enterprise_linux:8::appstream",
+                      "libarchive",
+                      "3.3.3-1.el8"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1293012-1e845c2a-fa5e-4666-b5d3-2580e8ff1e43",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "openssl - 1:1.1.1k-5.el8_5 - RHSA-2022:1065: openssl security update (Important)"
+                  },
+                  "fullDescription": {
+                    "text": "OpenSSL is a toolkit that implements the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols, as well as a full-strength general-purpose cryptography library.\u000A\u000ASecurity Fix(es):\u000A\u000A* openssl: Infinite loop in BN_mod_sqrt() reachable when parsing certificates (CVE-2022-0778)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "OpenSSL is a toolkit that implements the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols, as well as a full-strength general-purpose cryptography library.\u000A\u000ASecurity Fix(es):\u000A\u000A* openssl: Infinite loop in BN_mod_sqrt() reachable when parsing certificates (CVE-2022-0778)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 1:1.1.1k-6.el8_5"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/o:redhat:enterprise_linux:8::baseos",
+                      "openssl",
+                      "1:1.1.1k-5.el8_5"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1293002-1e845c2a-fa5e-4666-b5d3-2580e8ff1e43",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "openssl - 1:1.1.1k-5.el8_5 - RHSA-2022:1065: openssl security update (Important)"
+                  },
+                  "fullDescription": {
+                    "text": "OpenSSL is a toolkit that implements the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols, as well as a full-strength general-purpose cryptography library.\u000A\u000ASecurity Fix(es):\u000A\u000A* openssl: Infinite loop in BN_mod_sqrt() reachable when parsing certificates (CVE-2022-0778)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "OpenSSL is a toolkit that implements the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols, as well as a full-strength general-purpose cryptography library.\u000A\u000ASecurity Fix(es):\u000A\u000A* openssl: Infinite loop in BN_mod_sqrt() reachable when parsing certificates (CVE-2022-0778)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 1:1.1.1k-6.el8_5"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/a:redhat:enterprise_linux:8::appstream",
+                      "openssl",
+                      "1:1.1.1k-5.el8_5"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4389813-20a5af8f-eb0c-4219-a48f-5182830aac2d",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "reportlab - 3.5.34 - pyup.io-39642 (CVE-2020-28463)"
+                  },
+                  "fullDescription": {
+                    "text": "All versions of the package reportlab are vulnerable to Server-side Request Forgery (SSRF) via img tags. In order to reduce risk, use trustedSchemes \u0026amp; trustedHosts (see in Reportlab\u0026#39;s documentation).\u000D\u000Ahttps://www.reportlab.com/docs/reportlab-userguide.pdf"
+                  },
+                  "help": {
+                    "text": "All versions of the package reportlab are vulnerable to Server-side Request Forgery (SSRF) via img tags. In order to reduce risk, use trustedSchemes \u0026amp; trustedHosts (see in Reportlab\u0026#39;s documentation).\u000D\u000Ahttps://www.reportlab.com/docs/reportlab-userguide.pdf\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "reportlab",
+                      "3.5.34"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1293036-2a385f98-ff32-4a87-a4d7-92d53713c1d2",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "openssl-libs - 1:1.1.1k-5.el8_5 - RHSA-2022:1065: openssl security update (Important)"
+                  },
+                  "fullDescription": {
+                    "text": "OpenSSL is a toolkit that implements the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols, as well as a full-strength general-purpose cryptography library.\u000A\u000ASecurity Fix(es):\u000A\u000A* openssl: Infinite loop in BN_mod_sqrt() reachable when parsing certificates (CVE-2022-0778)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "OpenSSL is a toolkit that implements the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols, as well as a full-strength general-purpose cryptography library.\u000A\u000ASecurity Fix(es):\u000A\u000A* openssl: Infinite loop in BN_mod_sqrt() reachable when parsing certificates (CVE-2022-0778)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 1:1.1.1k-6.el8_5"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/o:redhat:enterprise_linux:8::baseos",
+                      "openssl-libs",
+                      "1:1.1.1k-5.el8_5"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1293026-2a385f98-ff32-4a87-a4d7-92d53713c1d2",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "openssl-libs - 1:1.1.1k-5.el8_5 - RHSA-2022:1065: openssl security update (Important)"
+                  },
+                  "fullDescription": {
+                    "text": "OpenSSL is a toolkit that implements the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols, as well as a full-strength general-purpose cryptography library.\u000A\u000ASecurity Fix(es):\u000A\u000A* openssl: Infinite loop in BN_mod_sqrt() reachable when parsing certificates (CVE-2022-0778)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "OpenSSL is a toolkit that implements the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols, as well as a full-strength general-purpose cryptography library.\u000A\u000ASecurity Fix(es):\u000A\u000A* openssl: Infinite loop in BN_mod_sqrt() reachable when parsing certificates (CVE-2022-0778)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 1:1.1.1k-6.el8_5"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/a:redhat:enterprise_linux:8::appstream",
+                      "openssl-libs",
+                      "1:1.1.1k-5.el8_5"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1290192-3627483b-7c7d-45d7-aa3c-b27792b1e914",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "glibc - 2.28-164.el8 - RHSA-2022:0896: glibc security update (Moderate)"
+                  },
+                  "fullDescription": {
+                    "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\u000A\u000ASecurity Fix(es):\u000A\u000A* glibc: Off-by-one buffer overflow/underflow in getcwd() (CVE-2021-3999)\u000A\u000A* glibc: Stack-based buffer overflow in svcunix_create via long pathnames (CVE-2022-23218)\u000A\u000A* glibc: Stack-based buffer overflow in sunrpc clnt_create via a long pathname (CVE-2022-23219)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\u000A\u000ASecurity Fix(es):\u000A\u000A* glibc: Off-by-one buffer overflow/underflow in getcwd() (CVE-2021-3999)\u000A\u000A* glibc: Stack-based buffer overflow in svcunix_create via long pathnames (CVE-2022-23218)\u000A\u000A* glibc: Stack-based buffer overflow in sunrpc clnt_create via a long pathname (CVE-2022-23219)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 0:2.28-164.el8_5.3"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/o:redhat:enterprise_linux:8::baseos",
+                      "glibc",
+                      "2.28-164.el8"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1290182-3627483b-7c7d-45d7-aa3c-b27792b1e914",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "glibc - 2.28-164.el8 - RHSA-2022:0896: glibc security update (Moderate)"
+                  },
+                  "fullDescription": {
+                    "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\u000A\u000ASecurity Fix(es):\u000A\u000A* glibc: Off-by-one buffer overflow/underflow in getcwd() (CVE-2021-3999)\u000A\u000A* glibc: Stack-based buffer overflow in svcunix_create via long pathnames (CVE-2022-23218)\u000A\u000A* glibc: Stack-based buffer overflow in sunrpc clnt_create via a long pathname (CVE-2022-23219)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\u000A\u000ASecurity Fix(es):\u000A\u000A* glibc: Off-by-one buffer overflow/underflow in getcwd() (CVE-2021-3999)\u000A\u000A* glibc: Stack-based buffer overflow in svcunix_create via long pathnames (CVE-2022-23218)\u000A\u000A* glibc: Stack-based buffer overflow in sunrpc clnt_create via a long pathname (CVE-2022-23219)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 0:2.28-164.el8_5.3"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/a:redhat:enterprise_linux:8::appstream",
+                      "glibc",
+                      "2.28-164.el8"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1290228-4a4a4226-a7a4-4d4e-a55c-5f7fadc8d3c9",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "glibc-common - 2.28-164.el8 - RHSA-2022:0896: glibc security update (Moderate)"
+                  },
+                  "fullDescription": {
+                    "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\u000A\u000ASecurity Fix(es):\u000A\u000A* glibc: Off-by-one buffer overflow/underflow in getcwd() (CVE-2021-3999)\u000A\u000A* glibc: Stack-based buffer overflow in svcunix_create via long pathnames (CVE-2022-23218)\u000A\u000A* glibc: Stack-based buffer overflow in sunrpc clnt_create via a long pathname (CVE-2022-23219)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\u000A\u000ASecurity Fix(es):\u000A\u000A* glibc: Off-by-one buffer overflow/underflow in getcwd() (CVE-2021-3999)\u000A\u000A* glibc: Stack-based buffer overflow in svcunix_create via long pathnames (CVE-2022-23218)\u000A\u000A* glibc: Stack-based buffer overflow in sunrpc clnt_create via a long pathname (CVE-2022-23219)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 0:2.28-164.el8_5.3"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/o:redhat:enterprise_linux:8::baseos",
+                      "glibc-common",
+                      "2.28-164.el8"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1290218-4a4a4226-a7a4-4d4e-a55c-5f7fadc8d3c9",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "glibc-common - 2.28-164.el8 - RHSA-2022:0896: glibc security update (Moderate)"
+                  },
+                  "fullDescription": {
+                    "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\u000A\u000ASecurity Fix(es):\u000A\u000A* glibc: Off-by-one buffer overflow/underflow in getcwd() (CVE-2021-3999)\u000A\u000A* glibc: Stack-based buffer overflow in svcunix_create via long pathnames (CVE-2022-23218)\u000A\u000A* glibc: Stack-based buffer overflow in sunrpc clnt_create via a long pathname (CVE-2022-23219)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\u000A\u000ASecurity Fix(es):\u000A\u000A* glibc: Off-by-one buffer overflow/underflow in getcwd() (CVE-2021-3999)\u000A\u000A* glibc: Stack-based buffer overflow in svcunix_create via long pathnames (CVE-2022-23218)\u000A\u000A* glibc: Stack-based buffer overflow in sunrpc clnt_create via a long pathname (CVE-2022-23219)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 0:2.28-164.el8_5.3"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/a:redhat:enterprise_linux:8::appstream",
+                      "glibc-common",
+                      "2.28-164.el8"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4387356-5a1049f1-dcc7-434e-88d6-785d51bca553",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "jsonpickle - 1.2 - pyup.io-39319 (CVE-2020-22083)"
+                  },
+                  "fullDescription": {
+                    "text": "Jsonpickle through 1.4.1 allows remote code execution during deserialization of a malicious payload through the decode() function. See CVE-2020-22083."
+                  },
+                  "help": {
+                    "text": "Jsonpickle through 1.4.1 allows remote code execution during deserialization of a malicious payload through the decode() function. See CVE-2020-22083.\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "jsonpickle",
+                      "1.2"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1292628-5b030e94-9d5b-4a19-8820-512086771da8",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "glibc-minimal-langpack - 2.28-164.el8 - RHSA-2022:0896: glibc security update (Moderate)"
+                  },
+                  "fullDescription": {
+                    "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\u000A\u000ASecurity Fix(es):\u000A\u000A* glibc: Off-by-one buffer overflow/underflow in getcwd() (CVE-2021-3999)\u000A\u000A* glibc: Stack-based buffer overflow in svcunix_create via long pathnames (CVE-2022-23218)\u000A\u000A* glibc: Stack-based buffer overflow in sunrpc clnt_create via a long pathname (CVE-2022-23219)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\u000A\u000ASecurity Fix(es):\u000A\u000A* glibc: Off-by-one buffer overflow/underflow in getcwd() (CVE-2021-3999)\u000A\u000A* glibc: Stack-based buffer overflow in svcunix_create via long pathnames (CVE-2022-23218)\u000A\u000A* glibc: Stack-based buffer overflow in sunrpc clnt_create via a long pathname (CVE-2022-23219)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 0:2.28-164.el8_5.3"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/o:redhat:enterprise_linux:8::baseos",
+                      "glibc-minimal-langpack",
+                      "2.28-164.el8"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1292618-5b030e94-9d5b-4a19-8820-512086771da8",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "glibc-minimal-langpack - 2.28-164.el8 - RHSA-2022:0896: glibc security update (Moderate)"
+                  },
+                  "fullDescription": {
+                    "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\u000A\u000ASecurity Fix(es):\u000A\u000A* glibc: Off-by-one buffer overflow/underflow in getcwd() (CVE-2021-3999)\u000A\u000A* glibc: Stack-based buffer overflow in svcunix_create via long pathnames (CVE-2022-23218)\u000A\u000A* glibc: Stack-based buffer overflow in sunrpc clnt_create via a long pathname (CVE-2022-23219)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux system cannot function correctly.\u000A\u000ASecurity Fix(es):\u000A\u000A* glibc: Off-by-one buffer overflow/underflow in getcwd() (CVE-2021-3999)\u000A\u000A* glibc: Stack-based buffer overflow in svcunix_create via long pathnames (CVE-2022-23218)\u000A\u000A* glibc: Stack-based buffer overflow in sunrpc clnt_create via a long pathname (CVE-2022-23219)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 0:2.28-164.el8_5.3"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/a:redhat:enterprise_linux:8::appstream",
+                      "glibc-minimal-langpack",
+                      "2.28-164.el8"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4385357-874f982b-40ef-4714-ab10-3cfd07246619",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "urllib3 - 1.24.2 - pyup.io-38834 (CVE-2020-26137)"
+                  },
+                  "fullDescription": {
+                    "text": "Urllib3 1.25.9 includes a fix for CVE-2020-26137: Urllib3 before 1.25.9 allows CRLF injection if the attacker controls the HTTP request method, as demonstrated by inserting CR and LF control characters in the first argument of putrequest(). NOTE: this is similar to CVE-2020-26116.\u000D\u000Ahttps://bugs.python.org/issue39603\u000D\u000Ahttps://github.com/urllib3/urllib3/commit/1dd69c5c5982fae7c87a620d487c2ebf7a6b436b\u000D\u000Ahttps://github.com/urllib3/urllib3/pull/1800"
+                  },
+                  "help": {
+                    "text": "Urllib3 1.25.9 includes a fix for CVE-2020-26137: Urllib3 before 1.25.9 allows CRLF injection if the attacker controls the HTTP request method, as demonstrated by inserting CR and LF control characters in the first argument of putrequest(). NOTE: this is similar to CVE-2020-26116.\u000D\u000Ahttps://bugs.python.org/issue39603\u000D\u000Ahttps://github.com/urllib3/urllib3/commit/1dd69c5c5982fae7c87a620d487c2ebf7a6b436b\u000D\u000Ahttps://github.com/urllib3/urllib3/pull/1800\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "urllib3",
+                      "1.24.2"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4385358-874f982b-40ef-4714-ab10-3cfd07246619",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "urllib3 - 1.24.2 - pyup.io-43975 (CVE-2021-33503)"
+                  },
+                  "fullDescription": {
+                    "text": "Urllib3 1.26.5 includes a fix for CVE-2021-33503: An issue was discovered in urllib3 before 1.26.5. When provided with a URL containing many @ characters in the authority component, the authority regular expression exhibits catastrophic backtracking, causing a denial of service if a URL were passed as a parameter or redirected to via an HTTP redirect.\u000D\u000Ahttps://github.com/advisories/GHSA-q2q7-5pp4-w6pg"
+                  },
+                  "help": {
+                    "text": "Urllib3 1.26.5 includes a fix for CVE-2021-33503: An issue was discovered in urllib3 before 1.26.5. When provided with a URL containing many @ characters in the authority component, the authority regular expression exhibits catastrophic backtracking, causing a denial of service if a URL were passed as a parameter or redirected to via an HTTP redirect.\u000D\u000Ahttps://github.com/advisories/GHSA-q2q7-5pp4-w6pg\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "urllib3",
+                      "1.24.2"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1292748-8800f110-0782-412c-ad01-c76cf1a7fd61",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "python3-libxml2 - 2.9.7-9.el8_4.2 - RHSA-2022:0899: libxml2 security update (Moderate)"
+                  },
+                  "fullDescription": {
+                    "text": "The libxml2 library is a development toolbox providing the implementation of various XML standards.\u000A\u000ASecurity Fix(es):\u000A\u000A* libxml2: Use-after-free of ID and IDREF attributes (CVE-2022-23308)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "The libxml2 library is a development toolbox providing the implementation of various XML standards.\u000A\u000ASecurity Fix(es):\u000A\u000A* libxml2: Use-after-free of ID and IDREF attributes (CVE-2022-23308)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 0:2.9.7-12.el8_5"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/o:redhat:enterprise_linux:8::baseos",
+                      "python3-libxml2",
+                      "2.9.7-9.el8_4.2"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1292738-8800f110-0782-412c-ad01-c76cf1a7fd61",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "python3-libxml2 - 2.9.7-9.el8_4.2 - RHSA-2022:0899: libxml2 security update (Moderate)"
+                  },
+                  "fullDescription": {
+                    "text": "The libxml2 library is a development toolbox providing the implementation of various XML standards.\u000A\u000ASecurity Fix(es):\u000A\u000A* libxml2: Use-after-free of ID and IDREF attributes (CVE-2022-23308)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "The libxml2 library is a development toolbox providing the implementation of various XML standards.\u000A\u000ASecurity Fix(es):\u000A\u000A* libxml2: Use-after-free of ID and IDREF attributes (CVE-2022-23308)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 0:2.9.7-12.el8_5"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/a:redhat:enterprise_linux:8::appstream",
+                      "python3-libxml2",
+                      "2.9.7-9.el8_4.2"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1292760-963d07ee-8162-47e3-9901-d5f1b5d4df49",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "expat - 2.2.5-4.el8 - RHSA-2022:0951: expat security update (Important)"
+                  },
+                  "fullDescription": {
+                    "text": "Expat is a C library for parsing XML documents.\u000A\u000ASecurity Fix(es):\u000A\u000A* expat: Malformed 2- and 3-byte UTF-8 sequences can lead to arbitrary code execution (CVE-2022-25235)\u000A\u000A* expat: Namespace-separator characters in \u0026#34;xmlns[:prefix]\u0026#34; attribute values can lead to arbitrary code execution (CVE-2022-25236)\u000A\u000A* expat: Integer overflow in storeRawNames() (CVE-2022-25315)\u000A\u000A* expat: Large number of prefixed XML attributes on a single tag can crash libexpat (CVE-2021-45960)\u000A\u000A* expat: Integer overflow in doProlog in xmlparse.c (CVE-2021-46143)\u000A\u000A* expat: Integer overflow in addBinding in xmlparse.c (CVE-2022-22822)\u000A\u000A* expat: Integer overflow in build_model in xmlparse.c (CVE-2022-22823)\u000A\u000A* expat: Integer overflow in defineAttribute in xmlparse.c (CVE-2022-22824)\u000A\u000A* expat: Integer overflow in lookup in xmlparse.c (CVE-2022-22825)\u000A\u000A* expat: Integer overflow in nextScaffoldPart in xmlparse.c (CVE-2022-22826)\u000A\u000A* expat: Integer overflow in storeAtts in xmlparse.c (CVE-2022-22827)\u000A\u000A* expat: Integer overflow in function XML_GetBuffer (CVE-2022-23852)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "Expat is a C library for parsing XML documents.\u000A\u000ASecurity Fix(es):\u000A\u000A* expat: Malformed 2- and 3-byte UTF-8 sequences can lead to arbitrary code execution (CVE-2022-25235)\u000A\u000A* expat: Namespace-separator characters in \u0026#34;xmlns[:prefix]\u0026#34; attribute values can lead to arbitrary code execution (CVE-2022-25236)\u000A\u000A* expat: Integer overflow in storeRawNames() (CVE-2022-25315)\u000A\u000A* expat: Large number of prefixed XML attributes on a single tag can crash libexpat (CVE-2021-45960)\u000A\u000A* expat: Integer overflow in doProlog in xmlparse.c (CVE-2021-46143)\u000A\u000A* expat: Integer overflow in addBinding in xmlparse.c (CVE-2022-22822)\u000A\u000A* expat: Integer overflow in build_model in xmlparse.c (CVE-2022-22823)\u000A\u000A* expat: Integer overflow in defineAttribute in xmlparse.c (CVE-2022-22824)\u000A\u000A* expat: Integer overflow in lookup in xmlparse.c (CVE-2022-22825)\u000A\u000A* expat: Integer overflow in nextScaffoldPart in xmlparse.c (CVE-2022-22826)\u000A\u000A* expat: Integer overflow in storeAtts in xmlparse.c (CVE-2022-22827)\u000A\u000A* expat: Integer overflow in function XML_GetBuffer (CVE-2022-23852)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 0:2.2.5-4.el8_5.3"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/o:redhat:enterprise_linux:8::baseos",
+                      "expat",
+                      "2.2.5-4.el8"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1292750-963d07ee-8162-47e3-9901-d5f1b5d4df49",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "expat - 2.2.5-4.el8 - RHSA-2022:0951: expat security update (Important)"
+                  },
+                  "fullDescription": {
+                    "text": "Expat is a C library for parsing XML documents.\u000A\u000ASecurity Fix(es):\u000A\u000A* expat: Malformed 2- and 3-byte UTF-8 sequences can lead to arbitrary code execution (CVE-2022-25235)\u000A\u000A* expat: Namespace-separator characters in \u0026#34;xmlns[:prefix]\u0026#34; attribute values can lead to arbitrary code execution (CVE-2022-25236)\u000A\u000A* expat: Integer overflow in storeRawNames() (CVE-2022-25315)\u000A\u000A* expat: Large number of prefixed XML attributes on a single tag can crash libexpat (CVE-2021-45960)\u000A\u000A* expat: Integer overflow in doProlog in xmlparse.c (CVE-2021-46143)\u000A\u000A* expat: Integer overflow in addBinding in xmlparse.c (CVE-2022-22822)\u000A\u000A* expat: Integer overflow in build_model in xmlparse.c (CVE-2022-22823)\u000A\u000A* expat: Integer overflow in defineAttribute in xmlparse.c (CVE-2022-22824)\u000A\u000A* expat: Integer overflow in lookup in xmlparse.c (CVE-2022-22825)\u000A\u000A* expat: Integer overflow in nextScaffoldPart in xmlparse.c (CVE-2022-22826)\u000A\u000A* expat: Integer overflow in storeAtts in xmlparse.c (CVE-2022-22827)\u000A\u000A* expat: Integer overflow in function XML_GetBuffer (CVE-2022-23852)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "Expat is a C library for parsing XML documents.\u000A\u000ASecurity Fix(es):\u000A\u000A* expat: Malformed 2- and 3-byte UTF-8 sequences can lead to arbitrary code execution (CVE-2022-25235)\u000A\u000A* expat: Namespace-separator characters in \u0026#34;xmlns[:prefix]\u0026#34; attribute values can lead to arbitrary code execution (CVE-2022-25236)\u000A\u000A* expat: Integer overflow in storeRawNames() (CVE-2022-25315)\u000A\u000A* expat: Large number of prefixed XML attributes on a single tag can crash libexpat (CVE-2021-45960)\u000A\u000A* expat: Integer overflow in doProlog in xmlparse.c (CVE-2021-46143)\u000A\u000A* expat: Integer overflow in addBinding in xmlparse.c (CVE-2022-22822)\u000A\u000A* expat: Integer overflow in build_model in xmlparse.c (CVE-2022-22823)\u000A\u000A* expat: Integer overflow in defineAttribute in xmlparse.c (CVE-2022-22824)\u000A\u000A* expat: Integer overflow in lookup in xmlparse.c (CVE-2022-22825)\u000A\u000A* expat: Integer overflow in nextScaffoldPart in xmlparse.c (CVE-2022-22826)\u000A\u000A* expat: Integer overflow in storeAtts in xmlparse.c (CVE-2022-22827)\u000A\u000A* expat: Integer overflow in function XML_GetBuffer (CVE-2022-23852)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 0:2.2.5-4.el8_5.3"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/a:redhat:enterprise_linux:8::appstream",
+                      "expat",
+                      "2.2.5-4.el8"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4385357-cdbffdc5-f70e-4a89-9755-d830ba8c7fb3",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "urllib3 - 1.25.8 - pyup.io-38834 (CVE-2020-26137)"
+                  },
+                  "fullDescription": {
+                    "text": "Urllib3 1.25.9 includes a fix for CVE-2020-26137: Urllib3 before 1.25.9 allows CRLF injection if the attacker controls the HTTP request method, as demonstrated by inserting CR and LF control characters in the first argument of putrequest(). NOTE: this is similar to CVE-2020-26116.\u000D\u000Ahttps://bugs.python.org/issue39603\u000D\u000Ahttps://github.com/urllib3/urllib3/commit/1dd69c5c5982fae7c87a620d487c2ebf7a6b436b\u000D\u000Ahttps://github.com/urllib3/urllib3/pull/1800"
+                  },
+                  "help": {
+                    "text": "Urllib3 1.25.9 includes a fix for CVE-2020-26137: Urllib3 before 1.25.9 allows CRLF injection if the attacker controls the HTTP request method, as demonstrated by inserting CR and LF control characters in the first argument of putrequest(). NOTE: this is similar to CVE-2020-26116.\u000D\u000Ahttps://bugs.python.org/issue39603\u000D\u000Ahttps://github.com/urllib3/urllib3/commit/1dd69c5c5982fae7c87a620d487c2ebf7a6b436b\u000D\u000Ahttps://github.com/urllib3/urllib3/pull/1800\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "urllib3",
+                      "1.25.8"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4385358-cdbffdc5-f70e-4a89-9755-d830ba8c7fb3",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "urllib3 - 1.25.8 - pyup.io-43975 (CVE-2021-33503)"
+                  },
+                  "fullDescription": {
+                    "text": "Urllib3 1.26.5 includes a fix for CVE-2021-33503: An issue was discovered in urllib3 before 1.26.5. When provided with a URL containing many @ characters in the authority component, the authority regular expression exhibits catastrophic backtracking, causing a denial of service if a URL were passed as a parameter or redirected to via an HTTP redirect.\u000D\u000Ahttps://github.com/advisories/GHSA-q2q7-5pp4-w6pg"
+                  },
+                  "help": {
+                    "text": "Urllib3 1.26.5 includes a fix for CVE-2021-33503: An issue was discovered in urllib3 before 1.26.5. When provided with a URL containing many @ characters in the authority component, the authority regular expression exhibits catastrophic backtracking, causing a denial of service if a URL were passed as a parameter or redirected to via an HTTP redirect.\u000D\u000Ahttps://github.com/advisories/GHSA-q2q7-5pp4-w6pg\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "urllib3",
+                      "1.25.8"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4386178-da64d9ac-8960-4a3e-bc1f-9f5bcd7e845c",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "babel - 2.8.0 - pyup.io-42203 (CVE-2021-42771)"
+                  },
+                  "fullDescription": {
+                    "text": "Babel 2.9.1 includes a fix for CVE-2021-42771: Babel.Locale in Babel before 2.9.1 allows attackers to load arbitrary locale .dat files (containing serialized Python objects) via directory traversal, leading to code execution.\u000D\u000Ahttps://github.com/python-babel/babel/pull/782"
+                  },
+                  "help": {
+                    "text": "Babel 2.9.1 includes a fix for CVE-2021-42771: Babel.Locale in Babel before 2.9.1 allows attackers to load arbitrary locale .dat files (containing serialized Python objects) via directory traversal, leading to code execution.\u000D\u000Ahttps://github.com/python-babel/babel/pull/782\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "babel",
+                      "2.8.0"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4386432-dd03acde-9410-4b4d-be5f-75354824a5b5",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "waitress - 1.4.2 - pyup.io-37667 (PVE-2021-37667)"
+                  },
+                  "fullDescription": {
+                    "text": "waitress 1.4.3 fixes a regular expression function (introduced in 1.4.2 to make sure that it matches RFC7230) that led to catastrophic backtracking which allows for a Denial of Service and CPU usage going to a 100% - see https://github.com/Pylons/waitress/security/advisories/GHSA-73m2-3pwg-5fgc"
+                  },
+                  "help": {
+                    "text": "waitress 1.4.3 fixes a regular expression function (introduced in 1.4.2 to make sure that it matches RFC7230) that led to catastrophic backtracking which allows for a Denial of Service and CPU usage going to a 100% - see https://github.com/Pylons/waitress/security/advisories/GHSA-73m2-3pwg-5fgc\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "waitress",
+                      "1.4.2"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4386433-dd03acde-9410-4b4d-be5f-75354824a5b5",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "waitress - 1.4.2 - pyup.io-46436 (CVE-2022-24761)"
+                  },
+                  "fullDescription": {
+                    "text": "Waitress is a Web Server Gateway Interface server for Python 2 and 3. When using Waitress versions 2.1.0 and prior behind a proxy that does not properly validate the incoming HTTP request matches the RFC7230 standard, Waitress and the frontend proxy may disagree on where one request starts and where it ends. This would allow requests to be smuggled via the front-end proxy to waitress and later behavior. There are two classes of vulnerability that may lead to request smuggling that are addressed by this advisory: The use of Python\u0026#39;s \u0026#39;int()\u0026#39; to parse strings into integers, leading to \u0026#39;&#43;10\u0026#39; to be parsed as \u0026#39;10\u0026#39;, or \u0026#39;0x01\u0026#39; to be parsed as \u0026#39;1\u0026#39;, where as the standard specifies that the string should contain only digits or hex digits; and Waitress does not support chunk extensions, however it was discarding them without validating that they did not contain illegal characters. This vulnerability has been patched in Waitress 2.1.1. A workaround is available. When deploying a proxy in front of waitress, turning on any and all functionality to make sure that the request matches the RFC7230 standard. Certain proxy servers may not have this functionality though and users are encouraged to upgrade to the latest version of waitress instead."
+                  },
+                  "help": {
+                    "text": "Waitress is a Web Server Gateway Interface server for Python 2 and 3. When using Waitress versions 2.1.0 and prior behind a proxy that does not properly validate the incoming HTTP request matches the RFC7230 standard, Waitress and the frontend proxy may disagree on where one request starts and where it ends. This would allow requests to be smuggled via the front-end proxy to waitress and later behavior. There are two classes of vulnerability that may lead to request smuggling that are addressed by this advisory: The use of Python\u0026#39;s \u0026#39;int()\u0026#39; to parse strings into integers, leading to \u0026#39;&#43;10\u0026#39; to be parsed as \u0026#39;10\u0026#39;, or \u0026#39;0x01\u0026#39; to be parsed as \u0026#39;1\u0026#39;, where as the standard specifies that the string should contain only digits or hex digits; and Waitress does not support chunk extensions, however it was discarding them without validating that they did not contain illegal characters. This vulnerability has been patched in Waitress 2.1.1. A workaround is available. When deploying a proxy in front of waitress, turning on any and all functionality to make sure that the request matches the RFC7230 standard. Certain proxy servers may not have this functionality though and users are encouraged to upgrade to the latest version of waitress instead.\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "waitress",
+                      "1.4.2"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4386435-dd03acde-9410-4b4d-be5f-75354824a5b5",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "waitress - 1.4.2 - pyup.io-42295 (CVE-2020-5236)"
+                  },
+                  "fullDescription": {
+                    "text": "Waitress version 1.4.2 allows a DOS attack When waitress receives a header that contains invalid characters. When a header like \u0026#34;Bad-header: xxxxxxxxxxxxxxx\\\\x10\u0026#34; is received, it will cause the regular expression engine to catastrophically backtrack causing the process to use 100% CPU time and blocking any other interactions. This allows an attacker to send a single request with an invalid header and take the service offline. This issue was introduced in version 1.4.2 when the regular expression was updated to attempt to match the behaviour required by errata associated with RFC7230. The regular expression that is used to validate incoming headers has been updated in version 1.4.3, it is recommended that people upgrade to the new version of Waitress as soon as possible."
+                  },
+                  "help": {
+                    "text": "Waitress version 1.4.2 allows a DOS attack When waitress receives a header that contains invalid characters. When a header like \u0026#34;Bad-header: xxxxxxxxxxxxxxx\\\\x10\u0026#34; is received, it will cause the regular expression engine to catastrophically backtrack causing the process to use 100% CPU time and blocking any other interactions. This allows an attacker to send a single request with an invalid header and take the service offline. This issue was introduced in version 1.4.2 when the regular expression was updated to attempt to match the behaviour required by errata associated with RFC7230. The regular expression that is used to validate incoming headers has been updated in version 1.4.3, it is recommended that people upgrade to the new version of Waitress as soon as possible.\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "waitress",
+                      "1.4.2"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4389101-ddfd1d9d-70cc-4db8-b3b3-b6a5c017c7da",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "pip - 19.3.1 - pyup.io-42559 (CVE-2021-3572)"
+                  },
+                  "fullDescription": {
+                    "text": "Pip version 21.1 includes a fix for CVE-2021-3572: A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity.\u000D\u000Ahttps://bugzilla.redhat.com/show_bug.cgi?id\u003D1962856"
+                  },
+                  "help": {
+                    "text": "Pip version 21.1 includes a fix for CVE-2021-3572: A flaw was found in python-pip in the way it handled Unicode separators in git references. A remote attacker could possibly use this issue to install a different revision on a repository. The highest threat from this vulnerability is to data integrity.\u000D\u000Ahttps://bugzilla.redhat.com/show_bug.cgi?id\u003D1962856\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "pip",
+                      "19.3.1"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "4389102-ddfd1d9d-70cc-4db8-b3b3-b6a5c017c7da",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "pip - 19.3.1 - pyup.io-40291 (CVE-2021-28363)"
+                  },
+                  "fullDescription": {
+                    "text": "Pip 21.1 updates its dependency \u0026#39;urllib3\u0026#39; to v1.26.4 due to security issues."
+                  },
+                  "help": {
+                    "text": "Pip 21.1 updates its dependency \u0026#39;urllib3\u0026#39; to v1.26.4 due to security issues.\n\nFixed In: "
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "pypi",
+                      "pip",
+                      "19.3.1"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1290168-f6705b3d-8dbc-4bec-bfb0-8de26edb61ae",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "vim-minimal - 2:8.0.1763-16.el8_5.4 - RHSA-2022:0894: vim security update (Moderate)"
+                  },
+                  "fullDescription": {
+                    "text": "Vim (Vi IMproved) is an updated and improved version of the vi editor.\u000A\u000ASecurity Fix(es):\u000A\u000A* vim: Heap-based buffer overflow in block_insert() in src/ops.c (CVE-2022-0261)\u000A\u000A* vim: Heap-based buffer overflow in utf_head_off() in mbyte.c (CVE-2022-0318)\u000A\u000A* vim: Heap-based buffer overflow in init_ccline() in ex_getln.c (CVE-2022-0359)\u000A\u000A* vim: Illegal memory access when copying lines in visual mode leads to heap buffer overflow (CVE-2022-0361)\u000A\u000A* vim: Heap-based buffer overflow in getexmodeline() in ex_getln.c (CVE-2022-0392)\u000A\u000A* vim: Use after free in src/ex_cmds.c (CVE-2022-0413)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "Vim (Vi IMproved) is an updated and improved version of the vi editor.\u000A\u000ASecurity Fix(es):\u000A\u000A* vim: Heap-based buffer overflow in block_insert() in src/ops.c (CVE-2022-0261)\u000A\u000A* vim: Heap-based buffer overflow in utf_head_off() in mbyte.c (CVE-2022-0318)\u000A\u000A* vim: Heap-based buffer overflow in init_ccline() in ex_getln.c (CVE-2022-0359)\u000A\u000A* vim: Illegal memory access when copying lines in visual mode leads to heap buffer overflow (CVE-2022-0361)\u000A\u000A* vim: Heap-based buffer overflow in getexmodeline() in ex_getln.c (CVE-2022-0392)\u000A\u000A* vim: Use after free in src/ex_cmds.c (CVE-2022-0413)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 2:8.0.1763-16.el8_5.12"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/o:redhat:enterprise_linux:8::baseos",
+                      "vim-minimal",
+                      "2:8.0.1763-16.el8_5.4"
+                    ],
+                    "precision": "very-high"
+                  }
+                },
+                  {
+                  "id": "1290158-f6705b3d-8dbc-4bec-bfb0-8de26edb61ae",
+                  "name": "scan_results",
+                  "shortDescription": {
+                    "text": "vim-minimal - 2:8.0.1763-16.el8_5.4 - RHSA-2022:0894: vim security update (Moderate)"
+                  },
+                  "fullDescription": {
+                    "text": "Vim (Vi IMproved) is an updated and improved version of the vi editor.\u000A\u000ASecurity Fix(es):\u000A\u000A* vim: Heap-based buffer overflow in block_insert() in src/ops.c (CVE-2022-0261)\u000A\u000A* vim: Heap-based buffer overflow in utf_head_off() in mbyte.c (CVE-2022-0318)\u000A\u000A* vim: Heap-based buffer overflow in init_ccline() in ex_getln.c (CVE-2022-0359)\u000A\u000A* vim: Illegal memory access when copying lines in visual mode leads to heap buffer overflow (CVE-2022-0361)\u000A\u000A* vim: Heap-based buffer overflow in getexmodeline() in ex_getln.c (CVE-2022-0392)\u000A\u000A* vim: Use after free in src/ex_cmds.c (CVE-2022-0413)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section."
+                  },
+                  "help": {
+                    "text": "Vim (Vi IMproved) is an updated and improved version of the vi editor.\u000A\u000ASecurity Fix(es):\u000A\u000A* vim: Heap-based buffer overflow in block_insert() in src/ops.c (CVE-2022-0261)\u000A\u000A* vim: Heap-based buffer overflow in utf_head_off() in mbyte.c (CVE-2022-0318)\u000A\u000A* vim: Heap-based buffer overflow in init_ccline() in ex_getln.c (CVE-2022-0359)\u000A\u000A* vim: Illegal memory access when copying lines in visual mode leads to heap buffer overflow (CVE-2022-0361)\u000A\u000A* vim: Heap-based buffer overflow in getexmodeline() in ex_getln.c (CVE-2022-0392)\u000A\u000A* vim: Use after free in src/ex_cmds.c (CVE-2022-0413)\u000A\u000AFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nFixed In: 2:8.0.1763-16.el8_5.12"
+                  },
+                  "properties": {
+                    "tags": [
+                      "vulnerability",
+                      "cpe:/a:redhat:enterprise_linux:8::appstream",
+                      "vim-minimal",
+                      "2:8.0.1763-16.el8_5.4"
+                    ],
+                    "precision": "very-high"
+                  }
+                }]
+        }
+      },
+      "results": [
+            {
+              "ruleId": "1292724-06dbbc41-7949-42cf-b342-26561a35a6e8",
+              "ruleIndex": 1292724,
+              "level": "error",
+              "message": {
+                "text": "libxml2 - 2.9.7-9.el8_4.2 - RHSA-2022:0899: libxml2 security update (Moderate)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
                 }
-              }
-            }]
-          }],
-        "columnKind": "utf16CodeUnits"
-      }
-    ]
-  }
+              }]    
+            },
+            {
+              "ruleId": "1292714-06dbbc41-7949-42cf-b342-26561a35a6e8",
+              "ruleIndex": 1292714,
+              "level": "error",
+              "message": {
+                "text": "libxml2 - 2.9.7-9.el8_4.2 - RHSA-2022:0899: libxml2 security update (Moderate)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4388425-0d69b52b-6fd8-43e4-975b-912895c456a1",
+              "ruleIndex": 4388425,
+              "level": "error",
+              "message": {
+                "text": "pillow - 8.3.2 - pyup.io-44525 (PVE-2021-44525)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4388426-0d69b52b-6fd8-43e4-975b-912895c456a1",
+              "ruleIndex": 4388426,
+              "level": "error",
+              "message": {
+                "text": "pillow - 8.3.2 - pyup.io-44485 (CVE-2022-22815)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4388427-0d69b52b-6fd8-43e4-975b-912895c456a1",
+              "ruleIndex": 4388427,
+              "level": "error",
+              "message": {
+                "text": "pillow - 8.3.2 - pyup.io-44524 (PVE-2022-44524)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4388428-0d69b52b-6fd8-43e4-975b-912895c456a1",
+              "ruleIndex": 4388428,
+              "level": "error",
+              "message": {
+                "text": "pillow - 8.3.2 - pyup.io-44486 (CVE-2022-22816)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4388429-0d69b52b-6fd8-43e4-975b-912895c456a1",
+              "ruleIndex": 4388429,
+              "level": "error",
+              "message": {
+                "text": "pillow - 8.3.2 - pyup.io-44487 (CVE-2022-22817)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4388430-0d69b52b-6fd8-43e4-975b-912895c456a1",
+              "ruleIndex": 4388430,
+              "level": "error",
+              "message": {
+                "text": "pillow - 8.3.2 - pyup.io-45356 (CVE-2022-24303)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4387255-11f1f426-d578-467e-bcce-e0bffd990c7d",
+              "ruleIndex": 4387255,
+              "level": "error",
+              "message": {
+                "text": "click - 7.1.2 - pyup.io-47833 (PVE-2022-47833)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1290096-15351dd1-fa96-4494-90ea-7f3dd9fdf08d",
+              "ruleIndex": 1290096,
+              "level": "error",
+              "message": {
+                "text": "libarchive - 3.3.3-1.el8 - RHSA-2022:0892: libarchive security update (Moderate)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1290086-15351dd1-fa96-4494-90ea-7f3dd9fdf08d",
+              "ruleIndex": 1290086,
+              "level": "error",
+              "message": {
+                "text": "libarchive - 3.3.3-1.el8 - RHSA-2022:0892: libarchive security update (Moderate)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1293012-1e845c2a-fa5e-4666-b5d3-2580e8ff1e43",
+              "ruleIndex": 1293012,
+              "level": "error",
+              "message": {
+                "text": "openssl - 1:1.1.1k-5.el8_5 - RHSA-2022:1065: openssl security update (Important)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1293002-1e845c2a-fa5e-4666-b5d3-2580e8ff1e43",
+              "ruleIndex": 1293002,
+              "level": "error",
+              "message": {
+                "text": "openssl - 1:1.1.1k-5.el8_5 - RHSA-2022:1065: openssl security update (Important)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4389813-20a5af8f-eb0c-4219-a48f-5182830aac2d",
+              "ruleIndex": 4389813,
+              "level": "error",
+              "message": {
+                "text": "reportlab - 3.5.34 - pyup.io-39642 (CVE-2020-28463)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1293036-2a385f98-ff32-4a87-a4d7-92d53713c1d2",
+              "ruleIndex": 1293036,
+              "level": "error",
+              "message": {
+                "text": "openssl-libs - 1:1.1.1k-5.el8_5 - RHSA-2022:1065: openssl security update (Important)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1293026-2a385f98-ff32-4a87-a4d7-92d53713c1d2",
+              "ruleIndex": 1293026,
+              "level": "error",
+              "message": {
+                "text": "openssl-libs - 1:1.1.1k-5.el8_5 - RHSA-2022:1065: openssl security update (Important)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1290192-3627483b-7c7d-45d7-aa3c-b27792b1e914",
+              "ruleIndex": 1290192,
+              "level": "error",
+              "message": {
+                "text": "glibc - 2.28-164.el8 - RHSA-2022:0896: glibc security update (Moderate)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1290182-3627483b-7c7d-45d7-aa3c-b27792b1e914",
+              "ruleIndex": 1290182,
+              "level": "error",
+              "message": {
+                "text": "glibc - 2.28-164.el8 - RHSA-2022:0896: glibc security update (Moderate)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1290228-4a4a4226-a7a4-4d4e-a55c-5f7fadc8d3c9",
+              "ruleIndex": 1290228,
+              "level": "error",
+              "message": {
+                "text": "glibc-common - 2.28-164.el8 - RHSA-2022:0896: glibc security update (Moderate)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1290218-4a4a4226-a7a4-4d4e-a55c-5f7fadc8d3c9",
+              "ruleIndex": 1290218,
+              "level": "error",
+              "message": {
+                "text": "glibc-common - 2.28-164.el8 - RHSA-2022:0896: glibc security update (Moderate)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4387356-5a1049f1-dcc7-434e-88d6-785d51bca553",
+              "ruleIndex": 4387356,
+              "level": "error",
+              "message": {
+                "text": "jsonpickle - 1.2 - pyup.io-39319 (CVE-2020-22083)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1292628-5b030e94-9d5b-4a19-8820-512086771da8",
+              "ruleIndex": 1292628,
+              "level": "error",
+              "message": {
+                "text": "glibc-minimal-langpack - 2.28-164.el8 - RHSA-2022:0896: glibc security update (Moderate)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1292618-5b030e94-9d5b-4a19-8820-512086771da8",
+              "ruleIndex": 1292618,
+              "level": "error",
+              "message": {
+                "text": "glibc-minimal-langpack - 2.28-164.el8 - RHSA-2022:0896: glibc security update (Moderate)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4385357-874f982b-40ef-4714-ab10-3cfd07246619",
+              "ruleIndex": 4385357,
+              "level": "error",
+              "message": {
+                "text": "urllib3 - 1.24.2 - pyup.io-38834 (CVE-2020-26137)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4385358-874f982b-40ef-4714-ab10-3cfd07246619",
+              "ruleIndex": 4385358,
+              "level": "error",
+              "message": {
+                "text": "urllib3 - 1.24.2 - pyup.io-43975 (CVE-2021-33503)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1292748-8800f110-0782-412c-ad01-c76cf1a7fd61",
+              "ruleIndex": 1292748,
+              "level": "error",
+              "message": {
+                "text": "python3-libxml2 - 2.9.7-9.el8_4.2 - RHSA-2022:0899: libxml2 security update (Moderate)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1292738-8800f110-0782-412c-ad01-c76cf1a7fd61",
+              "ruleIndex": 1292738,
+              "level": "error",
+              "message": {
+                "text": "python3-libxml2 - 2.9.7-9.el8_4.2 - RHSA-2022:0899: libxml2 security update (Moderate)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1292760-963d07ee-8162-47e3-9901-d5f1b5d4df49",
+              "ruleIndex": 1292760,
+              "level": "error",
+              "message": {
+                "text": "expat - 2.2.5-4.el8 - RHSA-2022:0951: expat security update (Important)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1292750-963d07ee-8162-47e3-9901-d5f1b5d4df49",
+              "ruleIndex": 1292750,
+              "level": "error",
+              "message": {
+                "text": "expat - 2.2.5-4.el8 - RHSA-2022:0951: expat security update (Important)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4385357-cdbffdc5-f70e-4a89-9755-d830ba8c7fb3",
+              "ruleIndex": 4385357,
+              "level": "error",
+              "message": {
+                "text": "urllib3 - 1.25.8 - pyup.io-38834 (CVE-2020-26137)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4385358-cdbffdc5-f70e-4a89-9755-d830ba8c7fb3",
+              "ruleIndex": 4385358,
+              "level": "error",
+              "message": {
+                "text": "urllib3 - 1.25.8 - pyup.io-43975 (CVE-2021-33503)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4386178-da64d9ac-8960-4a3e-bc1f-9f5bcd7e845c",
+              "ruleIndex": 4386178,
+              "level": "error",
+              "message": {
+                "text": "babel - 2.8.0 - pyup.io-42203 (CVE-2021-42771)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4386432-dd03acde-9410-4b4d-be5f-75354824a5b5",
+              "ruleIndex": 4386432,
+              "level": "error",
+              "message": {
+                "text": "waitress - 1.4.2 - pyup.io-37667 (PVE-2021-37667)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4386433-dd03acde-9410-4b4d-be5f-75354824a5b5",
+              "ruleIndex": 4386433,
+              "level": "error",
+              "message": {
+                "text": "waitress - 1.4.2 - pyup.io-46436 (CVE-2022-24761)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4386435-dd03acde-9410-4b4d-be5f-75354824a5b5",
+              "ruleIndex": 4386435,
+              "level": "error",
+              "message": {
+                "text": "waitress - 1.4.2 - pyup.io-42295 (CVE-2020-5236)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4389101-ddfd1d9d-70cc-4db8-b3b3-b6a5c017c7da",
+              "ruleIndex": 4389101,
+              "level": "error",
+              "message": {
+                "text": "pip - 19.3.1 - pyup.io-42559 (CVE-2021-3572)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "4389102-ddfd1d9d-70cc-4db8-b3b3-b6a5c017c7da",
+              "ruleIndex": 4389102,
+              "level": "error",
+              "message": {
+                "text": "pip - 19.3.1 - pyup.io-40291 (CVE-2021-28363)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1290168-f6705b3d-8dbc-4bec-bfb0-8de26edb61ae",
+              "ruleIndex": 1290168,
+              "level": "error",
+              "message": {
+                "text": "vim-minimal - 2:8.0.1763-16.el8_5.4 - RHSA-2022:0894: vim security update (Moderate)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            },
+            {
+              "ruleId": "1290158-f6705b3d-8dbc-4bec-bfb0-8de26edb61ae",
+              "ruleIndex": 1290158,
+              "level": "error",
+              "message": {
+                "text": "vim-minimal - 2:8.0.1763-16.el8_5.4 - RHSA-2022:0894: vim security update (Moderate)"
+              },
+              "locations": [{
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Dockerfile"
+                  },
+                  "region": {
+                    "startLine": 2,
+                    "startColumn": 1,
+                    "endColumn": 1
+                  }
+                }
+              }]    
+            }
+      ],
+      "columnKind": "utf16CodeUnits"
+    }
+  ]
+}
