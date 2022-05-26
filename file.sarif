@@ -11,7 +11,7 @@
           "version": "v0.0.1",
           "rules": [
                   {
-                  "id": "216056-04f75eb7-39c2-41ea-a56d-e1d55edb352f",
+                  "id": "216056-04f75eb7-39c2-41ea-a56d-e1d55edb352g",
                   "name": "scan_results",
                   "shortDescription": {
                     "text": "fuse-overlayfs - 1.6-1.module&#43;el8.4.0&#43;11822&#43;6cc1e7d7 - RHSA-2021:4154: container-tools:rhel8 security, bug fix, and enhancement update (Moderate)"
@@ -6482,7 +6482,7 @@
       },
       "results": [
             {
-              "ruleId": "216056-04f75eb7-39c2-41ea-a56d-e1d55edb352f",
+              "ruleId": "216056-04f75eb7-39c2-41ea-a56d-e1d55edb352g",
               "ruleIndex": 216056,
               "level": "warning",
               "message": {
